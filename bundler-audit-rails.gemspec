@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marco Perrando"]
   spec.email         = ["marco.perrando@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{A rake task for bundler-audit.}
+  spec.description   = %q{See https://eliotsykes.com/bundler-audit}
+  spec.homepage      = "https://github.com/mperrando/bundler-audit-rails"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
@@ -26,6 +26,9 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+
+  spec.add_dependency "rails", "~> 4.2.4"
+  spec.add_dependency "bundler-audit", "~> 0.4.0"
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
