@@ -27,7 +27,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "rails", "~> 4.2.4"
+  spec.add_dependency "rails", ">= 4.2", "<= 5"
   spec.add_dependency "bundler-audit", "~> 0.4.0"
 
   spec.add_development_dependency "bundler", "~> 1.10"
